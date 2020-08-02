@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Frontend Seed 4</title>
+  <title>8GAG</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
@@ -12,6 +13,7 @@
   <link rel="manifest" href="/images/favicons/site.webmanifest">
   <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
@@ -22,8 +24,8 @@
   <meta name="description" content="Frontend Seed 4 - Description">
 
   <meta property="fb:app_id" content="your_app_id">
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="">
   <meta property="og:description" content="">
   <meta property="og:url" content="">
@@ -83,7 +85,7 @@
       justify-content: center;
     }
 
-    .app-loading .bouncing-loader > div {
+    .app-loading .bouncing-loader>div {
       width: 1rem;
       height: 1rem;
       margin: 3rem 0.2rem;
@@ -92,11 +94,11 @@
       animation: bouncing-loader 0.6s infinite alternate;
     }
 
-    .app-loading .bouncing-loader > div:nth-child(2) {
+    .app-loading .bouncing-loader>div:nth-child(2) {
       animation-delay: 0.2s;
     }
 
-    .app-loading .bouncing-loader > div:nth-child(3) {
+    .app-loading .bouncing-loader>div:nth-child(3) {
       animation-delay: 0.4s;
     }
   </style>
@@ -109,38 +111,341 @@
 </head>
 
 <body>
-<div class="app-loading">
-  <div class="bouncing-loader">
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="app-loading">
+    <div class="bouncing-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
-</div>
-<div class="wrapper" id="site_wrapper">
-  <header class="header" id="header">
-  </header>
-  <main class="main" id="main">
-    <h1>Hello world!</h1>
-  </main>
-  <footer class="footer" id="footer">
-  </footer>
-</div>
+  <div class="wrapper" id="site_wrapper">
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+          </button>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="logo" class="logo">
+          </a>
 
-<!-- Core JavaScript -->
-<!--<script src="dist/core.min.js"></script>-->
-<script src="third_party/modernizr.min.js"></script>
-<!-- End Core JavaScript -->
+          <div class="navbar-collapse collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-random"></i>
+                  Shuffle
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-tablet-alt"></i>
+                  Get App
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  Shop
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  3pm Chat
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  COVID-19
+                </a>
+              </li>
+            </ul>
+          </div>
 
-<!-- JavaScript -->
-<!--<script src="dist/app.min.js"></script>-->
-<script src="js/common.js"></script>
-<script src="customs/script.js"></script>
-<!-- End JavaScript -->
+          <div class="navbar-utilites">
+            <a href="#" class="util-link">
+              <i class="fas fa-moon util-icon darkmode"></i>
+            </a>
+            <a href="#" class="util-link">
+              <i class="fas fa-search util-icon search"></i>
+            </a>
+          </div>
+
+          <div class="navbar-account">
+            <a class="toggle-account display" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user-circle"></i>
+            </a>
+            <div class="link-account">
+              <a class="account-login btn " href="#">
+                Log in
+              </a>
+              <a class="account-signup btn " href="#">
+                Sign up
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <div class="hero">
+        <div class="container">
+          <div class="main-content">
+            <div class="aside">
+              <div class="list-menu">
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item hot">
+                    <i class="fas fa-fire icon-start"></i>
+                      Hot
+                    <i class="fas fa-ellipsis-h icon-end"></i>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-chart-line icon-start"></i>
+                    Trending
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-clock icon-start"></i>
+                    Fresh
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-tablet-alt icon-start"></i>
+                    Get 8GAG app
+                  </a>
+                </div>
+
+                <div class="list-group list-group-flush">
+                  <header class="list-group-title list-group-item">
+                    POPULAR
+                  </header>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Dapibus ac facilis is in
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Morbi leo risus
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Porta ac consectet ur ac
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Vestibulum at eros
+                  </a>
+                </div>
+
+                <div class="list-group list-group-flush">
+                  <header class="list-group-title list-group-item">
+                    SECTION
+                  </header>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Dapibus ac facilis is in
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Morbi leo risus
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Porta ac consectet ur ac
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Vestibulum at eros
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Dapibus ac facilis is in
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Morbi leo risus
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Porta ac consectet ur ac
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <i class="fas fa-user icon-start"></i>
+                    Vestibulum at eros
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="content">
+              
+              <div class="banner" id="carouselExampleControls" data-ride="carousel">
+                <div class="banner-carousel">
+                  <div class="carousel-item active">
+                    <img class="d-block w-30 banner-img" src="/images/banner.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-30 banner-img" src="/images/banner2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-30 banner-img" src="/images/banner3.jpg" alt="Third slide">
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-post">
+  
+                <div class="post">
+                  <div class="featured-tag">
+                    <a href="#" class="btn tag">Sophie Turnner</a>
+                    <a href="#" class="btn tag">Liverpool</a>
+                    <a href="#" class="btn tag">Henry Cavill</a>
+                    <a href="#" class="btn tag">Elon Musk</a>
+                    <a href="#" class="btn tag">Kanye West</a>
+                    <a href="#" class="btn tag">Trump</a>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="/images/avt.jpeg" alt="">
+                      <small>Funny .1h</small>
+                    </div>
+                    <div class="card-body">
+                      <div>
+                        <h5 class="card-title">Which one? </h5>
+                        <img src="https://picsum.photos/id/1/866/866" class="card-img" alt="img">
+                      </div>
+                      <div class="card-cmt">
+                        <a href="#" class="cmt"> 649 like. </a>
+                        <a href="#" class="cmt"> 649 dislike. </a>
+                        <a href="#" class="cmt"> 649 comment. </a>
+                      </div>
+
+                    </div>
+                    <div class="card-footer">
+                      <div class="vote">
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-thumbs-up"></i>
+                        </button>
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-thumbs-down"></i>
+                        </button>
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-comments"></i>
+                        </button>
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                      </div>
+
+                      <div class="share">
+                        <button class="btn btn-primary">
+                          <i class="fab fa-facebook-f"></i>
+                          <i class="social-text">Facebook</i>
+                        </button>
+                        <button class="btn btn-danger">
+                          <i class="fab fa-pinterest"></i>
+                          <i class="social-text">Pinterest</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="/images/avt.jpeg" alt="">
+                      <small>Funny 1h</small>
+                    </div>
+                    <div class="card-body">
+                      <div>
+                        <h5 class="card-title">Which one? </h5>
+                        <img src="https://picsum.photos/id/2/866/866" class="card-img" alt="img">
+                      </div>
+                      <div class="card-cmt mt-3">
+                        <a href="#" class="cmt"> 649 like. </a>
+                        <a href="#" class="cmt"> 649 dislike. </a>
+                        <a href="#" class="cmt"> 649 comment. </a>
+                      </div>
+
+                    </div>
+                    <div class="card-footer">
+                      <div class="vote">
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-thumbs-up"></i>
+                        </button>
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-thumbs-down"></i>
+                        </button>
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-comments"></i>
+                        </button>
+                        <button type="button" class="btn btn-info btn-circle">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                      </div>
+
+                      <div class="share">
+                        <button class="btn btn-primary">
+                          <i class="fab fa-facebook-f"></i>
+                          <i class="social-text">Facebook</i>
+                        </button>
+                        <button class="btn btn-danger">
+                          <i class="fab fa-pinterest"></i>
+                          <i class="social-text">Pinterest</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="sidebar">
+                  <a href="#" class="side-link">
+                    <img src="https://picsum.photos/id/3/300/250" class="side-img" alt="sidebar">
+                  </a>
+                  <a href="#" class="side-link">
+                    <img src="https://picsum.photos/id/4/300/250" class="side-img" alt="sidebar">
+                  </a>
+                  <a href="#" class="side-link">
+                    <img src="https://picsum.photos/id/5/300/250" class="side-img" alt="sidebar">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+    </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- Core JavaScript -->
+  <!--<script src="dist/core.min.js"></script>-->
+  <script src="third_party/modernizr.min.js"></script>
+  <!-- End Core JavaScript -->
+
+
+  <!--<script src="dist/app.min.js"></script>-->
+  <script src="js/common.js"></script>
+  <script src="customs/script.js"></script>
+  <!-- End JavaScript -->
+
+
 </body>
+
 </html>

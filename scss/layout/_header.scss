@@ -1,3 +1,99 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1200px;
+}
+
+
+
+.header {
+    padding-bottom: 25px;
+    
+    .navbar {
+        background-color: black;
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        z-index:1030;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        
+        .navbar-brand {
+            padding-bottom: 12px;
+            margin-right: auto;
+        }
+
+        .navbar-toggler {
+            margin-right: 7px;
+            .navbar-toggler-icon i{
+                color: white;
+                padding-top: 5px;
+            }
+        }
+        
+        .navbar-collapse{
+            .nav-link {
+                font-size: 13px;
+                margin: 0 7px 0 7px;
+                color:white;
+            }
+            .nav-link:hover {
+                color:#9c9c9c;
+            }
+        }
+
+        .navbar-utilites {
+            .util-link {
+                margin: 0 10px 0 10px;
+                text-decoration: none;
+                .util-icon {
+                    color: #9c9c9c;
+                }
+                .util-icon.darkmode:hover {
+                    color: yellow;
+                }
+                .util-icon.search:hover {
+                    color: white;
+                }
+            }
+            
+        }
+        .navbar-account {
+            .btn {
+                color: #9c9c9c;
+                margin-left: 5px;
+                font-size: 14px;      
+            }
+
+            .account-signup {
+                height: 30px;
+                color: white;
+                font-weight: bold;
+                background-color: #0099ff;
+                padding-top: 2px;
+                
+            }
+
+            .toggle-account {
+                margin: 0 10px 0 10px;
+                color: #9c9c9c;
+                text-decoration: none;
+            }
+            .display {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    .header {
+        padding-bottom: 50px;
+    }
+}

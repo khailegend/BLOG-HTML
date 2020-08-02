@@ -4,3 +4,144 @@ Content
 .app-loading {
   display: none;
 }
+
+.main-content {
+  margin-top: 25px;
+  .aside {
+    display: none;
+    .list-group {
+      .list-group-item {
+        text-decoration: none;
+        color: black;
+        border-bottom: 0px ;
+      }
+    }
+  }
+    
+  .content {
+    @include flex(1);
+    display:flex;
+    flex-flow:row wrap;
+    align-items:center;
+    
+    .banner {
+      width: 100%;
+      padding-bottom: 25px;
+      .banner-img {
+        width: 100%;
+      }
+    }
+
+    .content-post {
+      .post {
+        .featured-tag {
+          padding-bottom: 20px;
+          .tag {
+            font-size: 14px;
+            background-color:#f7f7f7;
+            margin-bottom: 5px;
+          }
+        }
+
+        .card-img {
+          width: 100%;
+        }
+
+        .card {
+          margin-bottom: 20px; 
+          .card-body {
+            .card-cmt {
+              margin-top: 20px;
+            }
+          }
+          .card-footer {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .btn.btn-circle {
+              border-radius: 25px;
+            }
+            .social-text {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .sidebar {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include flexbox;
+    .aside {
+      display: block;
+      margin-right: 25px;
+      width: 200px;
+      .list-menu {
+        width: 200px;
+        font-size: 14px;
+        max-height: 85vh;
+        overflow:auto;
+        position: fixed;
+        
+        .list-group {
+          .hot {
+            background-color: #f7f7f7;
+            font-weight: bold;
+          }
+          .list-group-title {
+            font-weight: bold;
+            color: #686d77;
+          }
+          .list-group-item {
+            .icon-start {
+              margin-right: 5px;
+            } 
+            .icon-end {
+              margin-left: auto;
+            }
+            display: flex;
+            align-items: center;
+            padding-left: 7px;
+          }
+          a.list-group-item:hover {
+            background-color: #f7f7f7;
+          }
+        }
+        
+      }
+      .list-menu::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .content {
+      .content-post { 
+        display:flex;
+        flex-direction: row;
+        .post {
+          width: 675px;
+          .card {
+            width: 500px;
+            .card-footer {
+              .social-text {
+                display: inline;
+              }
+            }
+          }
+        }
+          
+        .sidebar {
+          width: 300px;
+          display: block  ;
+          .side-img {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -50,6 +50,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(../fonts/fontawesome/css/all.min.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9774,7 +9775,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-sm > .col,
-.row-sm > [class*="col-"] {
+.row-sm > [class*='col-'] {
   padding-right: 3px;
   padding-left: 3px;
   margin-bottom: 6px;
@@ -9786,7 +9787,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-md > .col,
-.row-md > [class*="col-"] {
+.row-md > [class*='col-'] {
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 10px;
@@ -10549,11 +10550,245 @@ a.text-dark:hover, a.text-dark:focus {
 /* ==========================================================================
 Header
 ========================================================================== */
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1200px;
+}
+
+.header {
+  padding-bottom: 25px;
+}
+
+.header .navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.header .navbar .navbar-brand {
+  padding-bottom: 12px;
+  margin-right: auto;
+}
+
+.header .navbar .navbar-toggler {
+  margin-right: 7px;
+}
+
+.header .navbar .navbar-toggler .navbar-toggler-icon i {
+  color: white;
+  padding-top: 5px;
+}
+
+.header .navbar .navbar-collapse .nav-link {
+  font-size: 13px;
+  margin: 0 7px 0 7px;
+  color: white;
+}
+
+.header .navbar .navbar-collapse .nav-link:hover {
+  color: #9c9c9c;
+}
+
+.header .navbar .navbar-utilites .util-link {
+  margin: 0 10px 0 10px;
+  text-decoration: none;
+}
+
+.header .navbar .navbar-utilites .util-link .util-icon {
+  color: #9c9c9c;
+}
+
+.header .navbar .navbar-utilites .util-link .util-icon.darkmode:hover {
+  color: yellow;
+}
+
+.header .navbar .navbar-utilites .util-link .util-icon.search:hover {
+  color: white;
+}
+
+.header .navbar .navbar-account .btn {
+  color: #9c9c9c;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.header .navbar .navbar-account .account-signup {
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #0099ff;
+  padding-top: 2px;
+}
+
+.header .navbar .navbar-account .toggle-account {
+  margin: 0 10px 0 10px;
+  color: #9c9c9c;
+  text-decoration: none;
+}
+
+.header .navbar .navbar-account .display {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding-bottom: 50px;
+  }
+}
+
 /* ==========================================================================
 Content
 ========================================================================== */
 .app-loading {
   display: none;
+}
+
+.main-content {
+  margin-top: 25px;
+}
+
+.main-content .aside {
+  display: none;
+}
+
+.main-content .aside .list-group .list-group-item {
+  text-decoration: none;
+  color: black;
+  border-bottom: 0px;
+}
+
+.main-content .content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.main-content .content .banner {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.main-content .content .banner .banner-img {
+  width: 100%;
+}
+
+.main-content .content .content-post .post .featured-tag {
+  padding-bottom: 20px;
+}
+
+.main-content .content .content-post .post .featured-tag .tag {
+  font-size: 14px;
+  background-color: #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.main-content .content .content-post .post .card-img {
+  width: 100%;
+}
+
+.main-content .content .content-post .post .card {
+  margin-bottom: 20px;
+}
+
+.main-content .content .content-post .post .card .card-body .card-cmt {
+  margin-top: 20px;
+}
+
+.main-content .content .content-post .post .card .card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content .content .content-post .post .card .card-footer .btn.btn-circle {
+  border-radius: 25px;
+}
+
+.main-content .content .content-post .post .card .card-footer .social-text {
+  display: none;
+}
+
+.main-content .content .content-post .sidebar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-content .aside {
+    display: block;
+    margin-right: 25px;
+    width: 200px;
+  }
+  .main-content .aside .list-menu {
+    width: 200px;
+    font-size: 14px;
+    max-height: 85vh;
+    overflow: auto;
+    position: fixed;
+  }
+  .main-content .aside .list-menu .list-group .hot {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  .main-content .aside .list-menu .list-group .list-group-title {
+    font-weight: bold;
+    color: #686d77;
+  }
+  .main-content .aside .list-menu .list-group .list-group-item {
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+  }
+  .main-content .aside .list-menu .list-group .list-group-item .icon-start {
+    margin-right: 5px;
+  }
+  .main-content .aside .list-menu .list-group .list-group-item .icon-end {
+    margin-left: auto;
+  }
+  .main-content .aside .list-menu .list-group a.list-group-item:hover {
+    background-color: #f7f7f7;
+  }
+  .main-content .aside .list-menu::-webkit-scrollbar {
+    display: none;
+  }
+  .main-content .content .content-post {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-content .content .content-post .post {
+    width: 675px;
+  }
+  .main-content .content .content-post .post .card {
+    width: 500px;
+  }
+  .main-content .content .content-post .post .card .card-footer .social-text {
+    display: inline;
+  }
+  .main-content .content .content-post .sidebar {
+    width: 300px;
+    display: block;
+  }
+  .main-content .content .content-post .sidebar .side-img {
+    padding-bottom: 20px;
+  }
 }
 
 /* ==========================================================================
